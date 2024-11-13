@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VClips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">VClips</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links">
+                    Home
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="clips.html" class="navbar__links">
+                    Clips
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="profile.html" class="navbar__links">
+                    Profile
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="signup.html" class="navbar__links">
+                    Signup
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class = "login-container">
+    <h1>Login</h1>
+    <form id = "login" method = "GET" action = "/api/users/login" >
+        <input type = "text" placeholder = "Enter Username" id = "userName" name = "userName" required><br>
+        <input type = "password" placeholder = "Enter Password" id = "password" name = "password" minlength = "8" maxlength = "12" required><br>
+        <button type = "submit">Login</button>
+        <button type="submit">Forgot Password</button>
+    </form>
+</div>
+</body>
+</html>
